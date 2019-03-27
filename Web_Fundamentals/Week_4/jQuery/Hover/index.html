@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hover</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("img").hover(function(){
+                $(this).attr("src", "./img/_25_00403.jpg");
+            }, function(){
+                $(this).attr("src","./img/photo-4.jpg");
+            }
+            );
+        });
+        
+    </script> 
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper{
+            width: 1000px;
+            min-height: 500px;
+            margin: 0 auto;
+        }
+
+        img{
+            width: 200px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="wrapper">
+        <div class="block">
+            <img src="./img/photo-4.jpg" alt="pic1">
+            <img src="./img/photo-4.jpg" alt="pic2">
+            <img src="./img/photo-4.jpg" alt="pic3">
+            <img src="./img/photo-4.jpg" alt="pic4">
+        </div>
+
+        <div class="block">
+            <img src="./img/photo-4.jpg" alt="pic5">
+            <img src="./img/photo-4.jpg" alt="pic6">
+            <img src="./img/photo-4.jpg" alt="pic7">
+            <img src="./img/photo-4.jpg" alt="pic8">
+        </div>
+    </div>
+    
+</body>
+</html>

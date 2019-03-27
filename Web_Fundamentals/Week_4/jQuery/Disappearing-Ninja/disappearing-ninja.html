@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disappearing Big Ron</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.block img').click(function(){
+                $(this).hide();
+            });
+
+            $('#restore').click(function(){
+                $(".block img").css("display","inline-block");
+            });
+        });
+    </script>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper{
+            width: 1000px;
+            min-height: 800px;
+            margin: 0 auto;
+        }
+
+        .block{
+            display: inline-block;
+        }
+
+        .block img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div class='block'>
+            <img src="./img/19810010.JPG" alt="img1">
+            <img src="./img/19810010.JPG" alt="img2">
+            <img src="./img/19810010.JPG" alt="img3">
+            <img src="./img/19810010.JPG" alt="img4">
+        </div>
+
+        <div class='block'>
+            <img src="./img/photo-4.jpg" alt="img5">
+            <img src="./img/photo-4.jpg" alt="img6">
+            <img src="./img/photo-4.jpg" alt="img7">
+            <img src="./img/photo-4.jpg" alt="img8">
+        </div>
+
+    </div>
+
+    <button id="restore">Restore</button>
+    
+</body>
+</html>

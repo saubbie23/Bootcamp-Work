@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper{
+    background-color: #245076;
+    width: 970px;
+    min-height: 800px;
+    margin: 0 auto;
+    /*padding: 20px; */
+}
+
+/*-------------------HEADER STYLINGS---------------------*/
+
+header{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+header h1{
+    display: inline-block;
+}
+
+header h1 img{
+    width: 270px;
+    display: inline-block;
+}
+
+#search{
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+    margin-left: 350px;
+}
+
+#search span{
+    color: black;
+    font-weight: bold;
+}
+
+#search a{
+    color: yellow;
+}
+
+#search p{
+    text-align: center;
+}
+
+.search-box{
+    background-color: #444444;
+    width: 220px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 10px 30px;
+}
+
+.search-box input{
+    height: 25px;
+    text-align: center;
+    color: gray;
+}
+
+.search-box button{
+    height: 25px;
+    width: 35px;
+    border: solid 1px #b1b1b1;
+    background-color: #245076;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px gray;
+}
+
+
+/*------------NAVIGATION STYLINGS-----------------*/
+.navigation{
+    background-color: #467ead;
+    border-radius: 10px;
+    height: 15px;
+    width: 675px;
+    margin-left: 75px;
+    padding: 18px 40px;
+    box-shadow: 2px 2px black;
+}
+
+.navigation li{
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+.links{
+    margin: 40px 100px 0 90px;
+    display: inline-block;
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* .links li{
+    background-image: url(./img/arrow.jpg);
+    background-position: .4em;
+    background-repeat: no-repeat;
+}  */
+
+.links a{
+    color: white;
+}
+
+.main-content p{
+    color: white;
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.main-content span{
+    color: yellow;
+    line-height: 28px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/*------------------Getting Started Stylings-------------------*/
+.getting-started{
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    margin-top: 15px;
+}
+
+.started-menu{
+    display: inline-block;
+    width: 425px;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    border-top: solid 5px #73a7d5;
+}
+
+.started-menu li{
+    text-indent: -40px;
+    margin-left: 100px;
+}
+
+.started-menu span{
+    color: #b0cee7;
+}
+
+/*------------------Footer Stylings--------------------------*/
+footer{
+    width: 100%;
+    height: 75px;
+    background-color: #245076;
+}
+
+footer ul{
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer li{
+    display: inline-block;
+    list-style-type: none;
+    color: #70a4d1;
+}
+
+footer p{
+    text-align: center;
+    color: #70a4d1;
+}

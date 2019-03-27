@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#wrapper{
+    width: 1000px;
+    min-height: 800px;
+    background-color: #1a1a1a;
+    margin: 0 auto;
+    padding: 5px;
+    border-left: 5px solid #161616;
+    border-right: 5px solid #161616;
+}
+
+/*-------------- HEADER AND NAVIGATION STYLINGS ----------------*/
+
+.header img{
+    width: 225px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.header h3{
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 540px;
+    margin-top: 25px;
+}
+
+.navigation ul{
+    background: linear-gradient(to top, #2a2a2a, #525252);
+    height: 50px;
+}
+
+
+.navigation li{
+    display: inline-block;
+    color: #a3a3a2;
+    margin: 10px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navigation li:first-child {
+    color: white;
+    margin-left: 30px;
+}
+
+.navigation span{
+    
+    vertical-align: middle;
+}
+
+.navigation img{
+    margin-top: 10px;
+    width: 1000px;
+}
+
+.border{
+    background: linear-gradient(to top, #494949, #3c3c3c);
+    width: 1px;
+    height: 30px;
+    vertical-align: middle;
+} 
+
+.navigation li:last-child{
+    margin:0 0 0 295px;
+    height: 50px;
+    vertical-align: middle;
+} 
+
+
+ 
+/*-------------- CONTENT STYLINGS ----------------*/
+
+.content{
+    height: 175px;
+    border-top: 5px solid gray;
+}
+.content-block{
+    display: inline-block;
+    width: 220px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.content-block img{
+    width: 40px;
+    vertical-align: top;
+}
+
+.content-block h3, .content-text{
+    display: inline-block;
+}
+
+.content-text{
+    width: 175px;
+    margin-top: 10px;
+}
+
+.content-text h3{
+    color: #dd7b2b;
+}
+
+.content-text p{
+    color: white;
+}
+
+/*-------------- BUY NOW STYLINGS ----------------*/
+.buy-now{
+    height: 150px;
+    background: repeating-linear-gradient(45deg, black,grey);
+    color: white;
+}
+
+.buy-now-text, .buy-now button{
+    display: inline-block;
+}
+
+.buy-now-text{
+    width: 600px;
+    margin: 40px 40px;
+}
+.buy-now p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.buy-now button{
+    color: white;
+    background: linear-gradient(to top right, #ef8231, #f29753);
+    vertical-align: top;
+    margin-top: 60px;
+    margin-left: 150px; 
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+/*-------------- PORTFOLIO STYLINGS ----------------*/
+.portfolio-header h3, a{
+    display: inline-block;
+    color: white;
+    margin: 40px 45px;
+}
+
+.portfolio a{
+    text-decoration: none;
+}
+
+.portfolio-header a:last-child{
+    color: #cf7529;
+    margin-left: 675px;
+    margin-right: 0;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.portfolio-block{
+    display: inline-block;
+    width: 200px;
+    margin-left: 40px;
+    color: white;
+    vertical-align: top;
+}
+
+.portfolio-block h4{
+    color: #cf7529;
+    margin-top: 10px;
+}
+
+.portfolio-block img{
+    border: 5px solid #363636;
+}
+
+.portfolio-block p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.portfolio a{
+    color: gray;
+    font-size: 10px;
+    margin: 5px 0 0 900px;
+}

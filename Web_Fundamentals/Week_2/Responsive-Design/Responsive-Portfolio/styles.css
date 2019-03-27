@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    width: 100%;
+    min-height: 800px;
+    margin: 0 auto;
+}
+
+/*--------------HEADER STYLINGS------------*/
+
+.header, .footer{
+    padding: 15px;
+    height: 30px;
+    background: radial-gradient(#f3f3f3,#f9f9f9);
+    width: 100%;
+}
+
+.header h2, .header h3{
+    display: inline-block;
+}
+
+.header h3{
+    margin-left: 65%;
+    
+}
+
+
+/*-------------------MAIN CONTENT STYLINGS------------------*/
+.main-content{
+    background: radial-gradient(#1e0d12, #6f5964);
+    width: 100%;
+    /* height: 100%; */
+    padding: 20px;
+    min-height: 800px;
+}
+
+.main-content img{
+    border: 5px solid gray;
+}
+
+.about-me{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    background: linear-gradient(to top left, #dbccda,#fefefe);
+    margin-left: 20px;
+    padding-bottom: 10px;
+    height: 100%;
+}
+
+.about-me h3{
+    color: white;
+    background: linear-gradient(#bdbdbf, #888694, #bdbdbf);
+    padding: 10px;  
+}
+
+.about-me p{
+    padding: 10px;
+    width: 100%;
+}
+
+.about-me a{
+    color: black;
+    padding: 10px;
+}
+
+
+/*--------------------PORTFOLIO STYLINGS----------------------*/
+.portfolio{
+    background: linear-gradient(to top left,#dbcddb,#fefefe);
+    margin-top: 20px;
+}
+
+.portfolio h2{
+    
+    color: white;
+    padding: 10px;
+    background: linear-gradient(#bdbdbf, #888694, #bdbdbf);
+}
+
+.portfolio img{
+    width: 100%;
+    border: none;
+}
+
+.tech-img img{
+    
+    border: none;
+}
+
+.tech-img li{
+    display: inline-block;
+    width: 10%;
+    margin: 10px;
+}
+
+.portfolio button{
+    background-color: green;
+	color:white;
+	border:solid 1px black;
+	border-radius: 3px;
+	padding:5px;
+	margin: 10px 100px;
+	font-weight: 900;
+}
+
+.spacing{
+    margin-left: 20px;
+}
+
+/*------------------FOOTER STYLINGS------------------*/
+.footer p
+{
+	margin:auto;
+	width: 30%;
+}
+
+.footer ul {
+	width: 50%;
+	margin:auto;
+}
+
+.footer ul li {
+    display:inline-block;
+    width: 15%;
+}
+
+.footer img {
+    width: 15%;
+	margin:auto;
+}
+
+/*------------RESPONSIVE STYLINGS---------------*/
+@media only screen and (max-width: 480px){
+    .sm-0{
+        display: none;
+    }
+    .sm-1{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px){
+    .md-1{
+        display: inline-block;
+        width: 45%;
+    }
+
+    .md-2{
+        display: inline-block;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+    .lg-2{
+        display: inline-block;   
+        width: 45%;
+    }
+    .lg-3{
+        display: inline-block;
+        width: 30%;
+    }
+    .lg-4{
+        width: 100%;
+    }
+}

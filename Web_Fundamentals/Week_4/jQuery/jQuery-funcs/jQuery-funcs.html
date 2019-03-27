@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Functions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // $('#btn_fade').click(function() { 
+            //     $('p.sp').hide();
+            // });
+            $('#add-class').click(function(){
+                // $('#click').addClass('red');
+                $(this).parent().addClass('red');
+            }); 
+
+            $('#hide').click(function(){
+                $(this).parent().hide();
+            });
+
+            $('#show').click(function(){
+                $(this).siblings('p.hidden').show();
+            });
+
+            $('#toggle').click(function(){
+                $(this).siblings('p').toggle();
+            });
+
+            $('#slide-down').click(function(){
+                $(this).siblings('img').slideDown();
+            });
+
+            $('#slide-up').click(function(){
+                $(this).siblings('img').slideUp();
+            });    
+
+            $('#slide-toggle').click(function(){
+                $(this).siblings('img').slideToggle();
+            });   
+
+            $('#fade-in').click(function(){
+                $(this).siblings('p.hidden').fadeIn();
+            }); 
+
+            $('#fade-out').click(function(){
+                $(this).siblings('p.fade-out').fadeOut();
+            });
+
+            $('#before').click(function(){
+                $(this).siblings('p').before("<p>Hullo!!</p>");
+            });
+
+            $('#after').click(function(){
+                $(this).siblings('p').after("<p>Well hiya!</p>");
+            });
+
+            $('#append').click(function(){
+                $(this).siblings('p').append(" something rad");
+            });
+
+            $('#html').click(function(){
+                $(this).siblings('p').html("<p>Wow, such HTML</p>");
+            });
+
+            $('#attr').click(function(){
+                $('.hidden').attr("alt","Wow what a photo!");
+            });
+
+            $('#val').click(function(){
+                console.log($(this).siblings("#single-opt").val());
+            });
+
+            $('#text').click(function(){
+                $(this).siblings('p').text("<p>text</p>, look at those p tags in there!");
+            });
+        });
+    </script>
+    
+    <style type="text/css">
+        .red{
+            background-color: red;
+        }
+
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Click</legend>
+            <p>Click the button to add a class!</p>
+            <button type="button" id="add-class">Click Away!</button>
+        </fieldset>
+
+        <fieldset class="hide">
+            <legend>Hide</legend>
+            <p>Click the button to hide this field!</p>
+            <button type="button" id="hide">Click click click!</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Show</legend>
+            <p>Click the button to show the hidden field!</p>
+            <p class='hidden'>Hello!</p>
+            <button type="button" id="show">CLICK!!!</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Toggle</legend>
+            <p>Click the button to toggle visibility!</p>
+            <button type="button" id="toggle">CLIIIIICK!!!</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Slide Down</legend>
+            <p>Click the button to slide some stuff down!</p>
+            <img src="./_25_00403.jpg" alt="hhhhiiiiiiiiiii" class="hidden" style='width: 200px;'>
+            <button type="button" id="slide-down">CLIIIIICK!!!</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Slide Up</legend>
+            <p>Click the button to slide some stuff up!</p>
+            <img src="./photo-4.jpg" alt="RAF" style='width: 200px;'>
+            <button type="button" id="slide-up">SlideMeUp!!!</button>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Slide Toggle</legend>
+            <p>Click the button to toggle slide some busnass!</p>
+            <img src="./19810010.JPG" alt="ski boi" style='width: 200px;'>
+            <button type="button" id="slide-toggle">Slide Toggle this shit!!!</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Fade Me In</legend>
+            <p>Click the button to faaaaaaaaaaaade!</p>
+            <p class='hidden'>Fade this guy in</p>
+            <button type="button" id="fade-in">FFFFFFFFFFFFAade!!!</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Fade to Black</legend>
+            <p>Click the button to faaaaaaaaaaaade OUT!</p>
+            <p class='fade-out'>Fade this guy out.</p>
+            <button type="button" id="fade-out">FFFFFFFFFFFFAade OOT!!!</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Before</legend>
+            <p>Click the button to add stuff before this</p>
+            <button type="button" id="before">B4</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>After</legend>
+            <p>Click the button to add stuff after this</p>
+            <button type="button" id="after">A4ter</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Append</legend>
+            <p>Click the button to append something rad to this paragraph</p>
+            <button type="button" id="append">Append</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>HTML</legend>
+            <p>Click the button to replace this paragraph</p>
+            <button type="button" id="html">HTML</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Attr</legend>
+            <p>Click the button to replace an alt tag of an image!</p>
+            <button type="button" id="attr">Attr</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Val</legend>
+            <p>Click the button to get the value of a dropdown!</p>
+            <select id="single-opt">
+                <option>First</option>
+                <option>Second</option>
+            </select>
+            <button type="button" id="val">Val</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Text</legend>
+            <p>Click the button to add some text!</p>
+            <button type="button" id="text">Text</button>
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

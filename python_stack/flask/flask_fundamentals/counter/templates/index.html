@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visitors</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .wrapper{
+            width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Counter!</h1>
+        <p>Actual Session Visits: {{session['visits']}}</p>
+        <p>Counter: {{session['counter']}}</p>
+        <a href="/add_var" class="btn btn-primary">Add two!</a>
+        <a href="/clear" class="btn btn-primary">Clear!</a>
+
+        <form action="/add_var" method="post">
+            <label for="increment">Enter the amount you would like to increment the counter!</label>
+            <input type="text" name="increment" id="">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkerboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class='wrapper'>
+
+        {% for i in range(0, mapping|length): %}
+            <div class='row'>
+                {% for j in range(0, mapping[i]|length): %}
+                    <div class='box-{{mapping[i][j]}}' style="background-color:{{['color',mapping[i][j]]|join}}"></div>
+                {% endfor %}
+            </div>
+        {% endfor %}    
+         
+</body>
+</html>

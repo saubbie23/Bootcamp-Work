@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrong, .right{
+    width: 200px;
+    height: 200px;
+}
+
+.wrong{
+    background-color: red;
+}
+
+.right{
+    background-color: green;
+}
+
+p{
+    padding: 0px 50px 0px 50px;
+    color: white;
+}
+
+a{
+    margin-left: 50px;
+}

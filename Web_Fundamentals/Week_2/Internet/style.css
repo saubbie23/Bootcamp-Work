@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    width: 970px;
+    min-height: 800px;
+    margin: 0 auto;
+}
+
+#top-content{
+    width: 100%;
+    height: 115px;
+}
+
+#top-content img{
+    width: 75px;
+}
+
+#top-content h1{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 25px;
+}
+
+#top-content span{
+    color: #3572a6;
+}
+
+#top-content h2{
+    color: white;
+    background-color: #3671a4;
+    height: 25px;
+    margin-top: -20px;
+    padding: 15px;
+}
+
+#main {
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(to top, #ffffff, #f5f5f5); 
+}
+
+#left-content{
+    width: 200px;
+    min-height: 600px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#left-content .red{
+    color: red;
+}
+
+#left-content span{
+    color: blue;
+}
+
+#left-content p{
+    font-weight: 900;
+    margin-left: 5px;
+}
+
+#left-content button{
+    margin-left: 5px;
+    margin-top: 3px;
+    border-radius: 5px;
+    color: white;
+    width: 95%;
+    height: 30px;
+    font-weight: 900;
+    border: solid 1px gray;
+    box-shadow: 2px 2px #b3b3b3;
+}
+#left-content .blue-btn{
+    background: linear-gradient(to top, #2c6da4,#588fbd);
+}
+
+#left-content .orng-btn{
+    background: linear-gradient(to top, #ef7e00, #eca140)
+}
+
+.line{
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.reinvent{
+    width: 100%;
+    position: relative;
+}
+
+.reinvent img{
+    position: absolute;
+    width: 100%;
+}
+
+.reinvent #img-two{
+    width: 75px;
+    top: 105px;
+    left: 50px
+}
+
+.reinvent p{
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    color: white;
+    margin-right: 10px;
+}
+
+.reinvent #learn-more{
+    color: white;
+    background: linear-gradient(to top, #00c2df, #78d0df);
+    border-radius: 5px;
+    width: 75%;
+    height: 30px;
+    position: absolute;
+    top: 225px;
+    margin-left: 20px; 
+    box-shadow: none;
+}
+
+/*--------------------MAIN CONTENT DISPLAY------------------------*/
+.main-content{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 700px;
+}
+
+.main-header{
+    width: 100%;
+}
+
+.main-header img{
+    width: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+.main-header h3{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    color: #3572a6;
+}
+
+.contact{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.contact h2{
+    color: blue;
+}
+
+#phone{
+    margin-left: 320px;
+    width: 65px
+}
+
+.main-info{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid black;
+}
+
+.main-info h3{
+    color: blue;
+}
+
+.main-info span{
+    color: blue;
+}
+
+#client-server{
+    width: 275px;
+    margin: 25px 175px;
+} 
+
+.big-3{
+    width: 100%;
+    border-top: 3px solid blue;
+    border-left: 3px solid blue;
+    border-right: 3px solid blue;
+    min-height: 150px;
+    margin-top: 20px;
+}
+
+.big-3 img{
+    width: 100px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.learn-more{
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+}

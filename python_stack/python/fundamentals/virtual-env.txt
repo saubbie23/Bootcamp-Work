@@ -1,0 +1,60 @@
+pip install Django==1.11.9
+
+This wil fetch the necessary install files for Django
+
+Collecting Django==1.11.9
+  Using cached https://files.pythonhosted.org/packages/c8/a6/291039f0ce4b9818e0399359866337e6dfe9c0e23d8d94f00e657edbfcd8/Django-1.11.9-py2.py3-none-any.whl
+Collecting pytz (from Django==1.11.9)
+  Using cached https://files.pythonhosted.org/packages/61/28/1d3920e4d1d50b19bc5d24398a7cd85cc7b9a75a490570d5a30c57622d34/pytz-2018.9-py2.py3-none-any.whl
+Installing collected packages: pytz, Django
+Successfully installed Django-1.11.9 pytz-2018.9
+
+pip list
+
+This shows what packages are installed on the virtual environment.
+
+Package    Version
+---------- -------
+Django     1.11.9
+pip        19.0.3
+pytz       2018.9
+setuptools 40.8.0
+wheel      0.33.1
+
+
+deactivate
+
+Self explanatory. Exits/deactivates the virtual environment.
+
+pip3 list
+
+Again shows packages isntalled. Django is no there because it was installed on the virtual environment.
+
+call myEnvironments/py3Env/Scripts/activate
+
+Activates the virtual environment.
+
+pip install Django==1.11.9
+
+Requirement already satisfied: Django==1.11.9 in c:\users\aubuc\desktop\dojo\python_stack\my_environments\py3env\lib\site-packages (1.11.9)
+Requirement already satisfied: pytz in c:\users\aubuc\desktop\dojo\python_stack\my_environments\py3env\lib\site-packages (from Django==1.11.9) (2018.9)
+
+pip freeze
+
+Shows packages installed by using pip. Generates requirements file for virtual environment.
+
+pip freeze > requirements.txt
+
+Creates a file with the output of the freeze command.
+
+pip uninstall Django
+
+uninstalls Django. Prompts for confirmation.
+
+pip show Django
+
+Nothing because Django has been uninstalled.
+
+pip search Flask
+
+shows all the files in the Flask package.

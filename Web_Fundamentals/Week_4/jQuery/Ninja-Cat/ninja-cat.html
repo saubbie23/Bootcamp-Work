@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja Cat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("img").click(function(){
+                var alt_src = $(this).attr('alt-src');
+                var src = $(this).attr('src');
+                $(this).attr('src', alt_src);
+                $(this).attr('alt-src', src);
+            });
+
+        });
+    </script>    
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #container{
+            width: 1000px;
+            min-height: 500px;
+            margin: 0 auto;
+        }
+
+        img{
+            width: 500px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="container">
+        <img src="./img/cat0.png" alt="img0" alt-src="./img/ninja0.png">
+        <img src="./img/cat1.png" alt="img1" alt-src="./img/ninja1.png">
+        <img src="./img/ninja2.png" alt="img2" alt-src="./img/cat2.png">
+        <img src="./img/ninja3.png" alt="img3" alt-src="./img/cat3.png">
+        <img src="./img/ninja4.png" alt="img4" alt-src="./img/cat4.png">
+    </div>
+</body>
+</html>

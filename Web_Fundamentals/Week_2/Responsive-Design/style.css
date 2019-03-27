@@ -1,0 +1,21 @@
+@media only screen and (max-width: 480px){
+    /* we will set these stylings only if the device is a screen with a width of 480px or less */
+    .navbtn {
+        background-color: yellow;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px){
+    .navbtn{
+        background-color: blue;
+        width: 49%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .navbtn{
+        background-color: red;
+        width: 24%;
+    }
+}
