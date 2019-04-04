@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "C:\Users\aubuc\Desktop\Dojo\python_stack\my_environments\py3Env\lib\site-packages\flask\app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\aubuc\Desktop\Dojo\python_stack\my_environments\py3Env\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\aubuc\Desktop\Dojo\python_stack\my_environments\py3Env\lib\site-packages\flask\app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\aubuc\Desktop\Dojo\python_stack\my_environments\py3Env\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\aubuc\Desktop\Dojo\python_stack\my_environments\py3Env\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\aubuc\Desktop\Dojo\python_stack\my_environments\py3Env\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\aubuc\Desktop\Dojo\python_stack\my_environments\py3Env\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\aubuc\Desktop\Dojo\python_stack\my_environments\py3Env\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\aubuc\Desktop\Dojo\python_stack\my_environments\py3Env\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\aubuc\Desktop\Dojo\python_stack\my_environments\py3Env\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\aubuc\Desktop\Dojo\python_stack\flask\flask_mysql\connection\server.py", line 10, in index
+    friends = mysql.query_db('SELECT * FROM friends;')
+  File "C:\Users\aubuc\Desktop\Dojo\python_stack\flask\flask_mysql\connection\mysqlconnection.py", line 14, in query_db
+    with self.connection.cursor as cursor:
+
+    Got this by removing () after self.connection.cursor
+
+    
