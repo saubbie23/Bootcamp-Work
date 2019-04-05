@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .wrapper{
+            width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Please enter your name.</label>
+                <input type="text" class="form-control" id="name" name="username" placeholder="Big Ron">
+            </div>
+            <div class="form-group">
+                <label for="locale">Dojo Location</label>
+                <select name="location" id="locale" class="form-control">
+                    {% for one_loc in loc %}
+                        <option value={{one_loc['locale']}}>{{one_loc['locale']}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="lang">Favorite Language</label>
+                <select name="language" id="lang" class="form-control">
+                    {% for one_lang in lang %}
+                    <option value={{one_lang['lang']}}>{{one_lang['lang']}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex-radio" id="sex-radio1" value="male">
+                <label class="form-check-label" for="sex-radio1">Male</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex-radio" id="sex-radio2" value="female">
+                <label class="form-check-label" for="sex-radio1">Female</label>
+            </div>    
+            <div class="form-check">    
+                <input class="form-check-input" type="radio" name="sex-radio" id="sex-radio3" value="nope">
+                <label class="form-check-label" for="sex-radio1">Nah</label>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Comment (optional):</label>
+                <textarea name="comment" id="comment" cols="30" rows="8" class="form-control"></textarea>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="email-check" name="email-check" value="True">
+                <label class="form-check-label" for="email-check">Check for sweet emailz</label>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

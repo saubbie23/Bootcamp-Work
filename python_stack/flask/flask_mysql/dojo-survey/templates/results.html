@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Results!</title>
+    <style>
+        .wrapper{
+            width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Submitted Info</h1>
+        <ul>
+            <li>Name: {{user_data['username']}}</li>
+            <li>Location: {{user_data['location']}}</li>
+            <li>Language: {{user_data['language']}}</li>
+            <li>Sex: {{user_data['sex-radio']}}</li>
+            <li>Comment: {{user_data['comment']}}</li>
+            <li>Email? {{user_data['email-check']}}</li>
+        </ul>
+    </div>
+</body>
+</html>
