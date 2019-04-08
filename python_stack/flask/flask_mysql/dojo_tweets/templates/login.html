@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log In</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .tweet{
+            border: 1px black solid;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .error{
+            color: red;
+            font-weight: bold;
+        }
+        form{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-light bg-light">
+            <h4 class="navbar-brand">Dojo Tweets</h4>
+            <h4 class="navbar-brand">Welcome, {{session['first_name']}}</h4>
+            <a href="/users" class='nav-link'>Users</a>
+            <a href="/logout" class='nav-link'>Log Out</a>
+        </nav>
+    
+        <h1>Write a Tweet:</h1>
+        <form action="/submit_tweet" method="POST">
+            <div class="form-group">
+                <input type="textarea" name="tweet" class="form-control" cols="50" rows="10" placeholder="Your tweet here...">
+            </div>
+            <button type="submit" class="btn btn-primary">Tweet!</button>
+        </form>
+
+        {% with messages = get_flashed_messages() %}    
+            {% if messages %}                            
+                {% for message in messages %}            
+                    <p class='error'>{{message}}</p>                   
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <h1>Your Feed:</h1>
+        {% for tweet in tweets %}
+            <div class="tweet">
+                <h4>{{tweet['user_name']}} says:</h4>
+                <p>{{tweet['tweet']}}</p>
+                <p>Likes: {{tweet['likes']}}</p>
+                
+                <form action="/tweets/{{tweet['id']}}/add_like", method="POST">
+                    <button type="submit" class="btn btn-primary">Like</button>
+                </form>
+                {% if tweet['users_id'] == session['id']%}
+                    <form action="/tweets/{{tweet['id']}}/delete" method="POST">
+                        <button type="submit" class="btn btn-primary">Delete</button>
+                    </form>
+                    <a href="/tweets/{{tweet['id']}}/edit" class="btn btn-primary">Edit</a>
+                {% endif %}    
+            </div>
+        {% endfor %}
+    </div>  
+</body>
+</html>
